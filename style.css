@@ -5,8 +5,105 @@ body {
     margin: 0;
     padding: 0;
 }
+li {
+    list-style-type: none;
+}
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
 .pagetop {
+    width: 100%;
     max-width: 1404px;
     margin: 0 auto;
     display: flex;
+}
+.left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+.logo {
+    margin-top: 70px;
+    margin-left: 80px;
+}
+.logolink {
+    cursor: pointer;
+}
+.zagtop {
+    position: absolute;
+    top:450px;
+    left:120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 70px;
+    color: #415167;
+    z-index: 2;
+}
+.zagtop span {
+    color: #F9FBFF;
+    background: #C7A17A;
+    padding: 5px 15px 5px 15px;
+}
+.center {
+    position: relative;
+}
+.play {
+    position: absolute;
+    top: 340px;
+    left: 285px;
+    z-index: 2;
+}
+.play:hover {
+    scale: 1.2;
+}
+.right {
+    width: 30%;
+    max-width: 274px;
+    display: flex;
+    flex-direction: column;
+    background: #415167;
+}
+.basketarea {
+    position: relative;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.basket {
+    position: absolute;
+    left: 55px;
+}
+.basketnumber {
+    position: absolute;
+    left:70px;
+    top: -10px;
+    color: white;
+    border: #C7A17A solid 1px;
+    padding: 1px 5px 1px 5px;
+    background: #C7A17A;
+    border-radius: 50%;
+}
+.nav {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.home {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #EDF0F5;
+    text-decoration: none;
+}
+.link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #EDF0F5;
+    text-decoration: none;
 }
