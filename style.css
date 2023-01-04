@@ -26,6 +26,8 @@ button {
     background: none;
     cursor: pointer;
 }
+
+
 .pagetop {
     max-width: 1404px;
     margin: 0 auto;
@@ -165,6 +167,8 @@ button {
     line-height: 22px;
     color: #151D28;
 }
+
+
 .pagesale {
     position: relative;
     max-width: 1404px;
@@ -233,7 +237,7 @@ button {
     left: 42px;
 }
 .buy {
-    padding: 6px 15px 6px 15px;
+    padding: 6px 17px 6px 17px;
     background: #C7A17A;
     border-radius: 30px;
     font-family: 'Nunito';
@@ -274,4 +278,135 @@ button {
     height: 100%;
     opacity: 0.6;
     background:linear-gradient(90deg, white 0%, #EDF0F5 100%, transparent 10% ,transparent 100%);
+}
+
+
+.pagegift {
+    position: relative;
+    max-width: 1404px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    padding-top: 85px;
+    background:linear-gradient(90deg, #EDF0F5 0%, #EDF0F5 80%, #ffffff 80%);
+}
+.blockset {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.set {
+    width: 550px;
+    padding: 64px;
+    background: #FFFFFF;
+}
+.photoset {
+    margin-left: 130px;
+    background:linear-gradient(90deg, #EDF0F5 0%, #EDF0F5 50%, #ffffff 50%);
+}
+.coffe {
+    display: flex;
+    margin-top: 20px;
+}
+.coffe-item {
+    margin-left: 10px;
+    margin-right: 100px;
+}
+.coffe-item2 {
+    margin-left: 10px;
+}
+.buygift {
+    display: flex;
+    gap:170px;
+    margin-top: 30px;
+}
+.buygiftbut {
+    padding: 6px 30px 6px 30px;
+    background: #C7A17A;
+    border-radius: 30px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F9FBFF;
+}
+.buygiftbut:hover {
+    scale: 1.1;
+    background: #415167;
+}
+.moregift {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #415167;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.blocknumber {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.numberset{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    color: #415167;
+    padding: 56px 33px 57px 33px;
+    border: solid 0.1px #EDF0F5;
+}
+.numberset:nth-child(2) {
+    background: #EDF0F5;
+    opacity: 0.5;
+    scale: 0.95;
+}
+.numberset:nth-child(3) {
+    background: #EDF0F5;
+    opacity: 0.5;
+    scale: 0.95;
+}
+
+
+.pagecombo {
+    width: 100%;
+    max-width: 1404px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    padding-top: 85px;
+    overflow-x: hidden;
+    background:linear-gradient(90deg, #F9FBFF 80%, #415167 80%, #415167 100%);
+}
+.blockcombo {
+    margin-top: 64px;
+    display: flex;
+    gap: 30px;
+    margin-left: 128px;
+}
+.tovarcombo {
+    width: 100%;
+    max-width: 360px;
+    filter: drop-shadow(4px 4px 8px rgba(148, 143, 143, 0.5));
+}
+.comboop {
+    width: 100%;
+    padding: 42px;
+    background: #ffffff;
+}
+.combosale {
+
+}
+.saleold {
+    font-family: 'Nunito';
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #415167;
+    margin-left: 10px;
+}
+.buycombo {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
 }
