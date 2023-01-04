@@ -261,7 +261,7 @@ button {
 }
 .strelka{
     position: absolute;
-    right: 140px;
+    right: 130px;
     top:440px;
     max-width: 1404px;
     z-index: 2;
@@ -293,11 +293,19 @@ button {
     display: flex;
     align-items: center;
     margin-top: 100px;
+
 }
+.shadowset {
+    width: 555px;
+    height: 460px;
+    overflow-x: hidden;
+} 
 .set {
     width: 550px;
+    height: 460px;
     padding: 64px;
     background: #FFFFFF;
+    box-shadow: 5px 5px 10px gray;
 }
 .photoset {
     margin-left: 130px;
@@ -354,22 +362,28 @@ button {
     font-size: 30px;
     line-height: 34px;
     color: #415167;
-    padding: 56px 33px 57px 33px;
-    border: solid 0.1px #EDF0F5;
+    padding: 59px 33px 60px 33px;
+}
+.numberset:nth-child(1) {
+    box-shadow: 8px 10px 10px gray;
+    z-index: 2;
+    background: white;
+    position: relative;
+    left: -4px;
+    top:0px;
 }
 .numberset:nth-child(2) {
     background: #EDF0F5;
     opacity: 0.5;
-    scale: 0.95;
 }
 .numberset:nth-child(3) {
     background: #EDF0F5;
     opacity: 0.5;
-    scale: 0.95;
 }
 
 
 .pagecombo {
+    position: relative;
     width: 100%;
     max-width: 1404px;
     margin: 0 auto;
@@ -387,12 +401,12 @@ button {
 .tovarcombo {
     width: 100%;
     max-width: 360px;
-    filter: drop-shadow(4px 4px 8px rgba(148, 143, 143, 0.5));
+    box-shadow: 5px 5px 5px gray;
+    background: #ffffff;
 }
 .comboop {
     width: 100%;
     padding: 42px;
-    background: #ffffff;
 }
 .combosale {
 
@@ -409,4 +423,24 @@ button {
     margin-top: 52px;
     display: flex;
     justify-content: space-between;
+}
+.strelkabot{
+    position: absolute;
+    right: 30px;
+    top:270px;
+    max-width: 1404px;
+    z-index: 2;
+}
+.strelkabot:hover {
+    scale: 1.2;
+}
+.backgroundbot {
+    position: absolute;
+    right: 0px;
+    bottom: 120px;
+    max-width: 1404px;
+    width: 7.5%;
+    height: 58%;
+    opacity: 0.6;
+    background:linear-gradient(90deg, white 90%, #EDF0F5 100%, transparent 10% ,transparent 100%);
 }
