@@ -307,6 +307,7 @@ button {
     scale: 1.2;
 }
 
+                                    /* GIFT */
 
 .pagegift {
     position: relative;
@@ -404,12 +405,19 @@ button {
 .numberset:nth-child(2) {
     background: #EDF0F5;
     opacity: 0.5;
+    position: relative;
+    left: -10px;
+    top:0px;
 }
 .numberset:nth-child(3) {
     background: #EDF0F5;
     opacity: 0.5;
+    position: relative;
+    left: -10px;
+    top:0px;
 }
 
+                                /* COMBO */
 
 .pagecombo {
     position: relative;
