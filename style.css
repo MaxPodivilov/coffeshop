@@ -259,14 +259,14 @@ button {
     text-decoration: none;
     margin-left: 10px;
 }
-.strelka{
+.strelkaright{
     position: absolute;
     right: 130px;
     top:440px;
     max-width: 1404px;
     z-index: 2;
 }
-.strelka:hover {
+.strelkaright:hover {
     scale: 1.2;
 }
 .background {
@@ -278,6 +278,33 @@ button {
     height: 100%;
     opacity: 0.6;
     background:linear-gradient(90deg, white 0%, #EDF0F5 100%, transparent 10% ,transparent 100%);
+}
+.backgroundleft {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    max-width: 1404px;
+    width: 15%;
+    height: 100%;
+    opacity: 0.6;
+    background:linear-gradient(90deg, white 0%, #EDF0F5 100%, transparent 10% ,transparent 100%);
+}
+.active {
+    display:block;
+    transform: translateX(calc(-540px*0));
+    transition: transform 300ms linear;
+}
+.strelkaleft{
+    position: absolute;
+    left: 60px;
+    top:440px;
+    max-width: 1404px;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+.strelkaleft:hover {
+    scale: 1.2;
 }
 
 
