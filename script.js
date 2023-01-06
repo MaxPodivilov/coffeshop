@@ -5,7 +5,7 @@ let backleft = document.querySelector('.backgroundleft');
 console.log(butright);
 
 butright.onclick = () => {
-    console.log(click);
+    console.log('click');
     backleft.classList.add('active');
 
 }

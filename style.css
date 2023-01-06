@@ -27,6 +27,7 @@ button {
     cursor: pointer;
 }
 
+                                /* TOP */
 
 .pagetop {
     max-width: 1404px;
@@ -64,6 +65,9 @@ button {
 }
 .center {
     position: relative;
+}
+.centerphoto {
+    display: block;
 }
 .play {
     position: absolute;
@@ -121,6 +125,9 @@ button {
     color: #EDF0F5;
     text-decoration: none;
 }
+
+                                    /* BUILD */
+
 .pageperson {
     max-width: 1104px;
     margin: 0 auto;
@@ -168,6 +175,7 @@ button {
     color: #151D28;
 }
 
+                                    /* SALE */
 
 .pagesale {
     position: relative;
@@ -199,7 +207,7 @@ button {
     max-width: 519px;
     background: #ffffff;
     display: flex;
-    box-shadow: 1px 5px 5px 1px rgb(153, 154, 154,0.5);
+    box-shadow: 1px 5px 5px 1px rgb(205, 205, 205, 0.5);
 }
 .item-block {
     position: relative;
@@ -277,7 +285,7 @@ button {
     max-width: 1404px;
     width: 15%;
     height: 100%;
-    background:linear-gradient(90deg, rgba(237,240,245,0.4)0%, rgba(237,240,245, 0.5)100%);
+    /* background:linear-gradient(90deg, rgba(237,240,245,0.4)0%, rgba(237,240,245, 0.5)100%); */
 }
 .backgroundleft {
     display: none;
@@ -288,7 +296,7 @@ button {
     width: 15%;
     height: 100%;
     opacity: 0.6;
-    background:linear-gradient(90deg, rgba(237,240,245,0.4)0%, rgba(237,240,245, 0.5)100%);
+    /* background:linear-gradient(90deg, rgba(237,240,245,0.4)0%, rgba(237,240,245, 0.5)100%); */
 }
 .active {
     display:block;
@@ -319,26 +327,31 @@ button {
 }
 .blockset {
     display: flex;
-    align-items: center;
     margin-top: 100px;
-
 }
 .shadowset {
-    width: 560px;
-    height: 460px;
-    overflow-x: hidden;
+    position: relative;
+    left: 100px;
+    display: flex;
+    background: #FFFFFF;
+    padding-left: 500px;
 } 
 .set {
     position: relative;
+    left: -12px;
     width: 550px;
     height: 460px;
     padding: 64px;
     background: #FFFFFF;
-    box-shadow: 10px 160px 10px 1px rgba(105,101,101,0.40);
-    z-index: 5;
+    z-index: 0;
+    box-shadow: 1px 0px 15px 1px rgba(205, 205, 205, 0.4);
 }
 .photoset {
-    margin-left: 130px;
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
     background:linear-gradient(90deg, #EDF0F5 0%, #EDF0F5 50%, #ffffff 50%);
 }
 .coffe {
@@ -382,6 +395,7 @@ button {
     margin-top: 5px;
 }
 .blocknumber {
+    position: relative;
     width: 90px;
     display: flex;
     flex-direction: column;
@@ -394,27 +408,21 @@ button {
     color: #415167;
     padding: 59px 33px 60px 33px;
 }
-.numberset:nth-child(1) {
-    box-shadow:9px 10px 10px 1px rgba(105,101,101,0.40);
-    z-index: 2;
+.numberset{
+    background: #EDF0F5;
+    opacity: 0.5;
+    position: relative;
+    left: -10px;
+    top:0px;
+}
+.btnactive {
+    box-shadow: 3px 0px 3px 1px rgba(205, 205, 205, 0.4);
+    z-index: 50;
     background: white;
     position: relative;
-    left: -10px;
+    left: -12px;
     top:0px;
-}
-.numberset:nth-child(2) {
-    background: #EDF0F5;
-    opacity: 0.5;
-    position: relative;
-    left: -10px;
-    top:0px;
-}
-.numberset:nth-child(3) {
-    background: #EDF0F5;
-    opacity: 0.5;
-    position: relative;
-    left: -10px;
-    top:0px;
+    opacity: 1;
 }
 
                                 /* COMBO */
@@ -438,7 +446,7 @@ button {
 .tovarcombo {
     width: 100%;
     max-width: 360px;
-    box-shadow: 1px 5px 5px 1px rgb(153, 154, 154,0.5);
+    box-shadow: 1px 5px 5px 1px rgb(205, 205, 205, 0.5);
     background: #ffffff;
 }
 .comboop {
