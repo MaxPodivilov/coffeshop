@@ -203,11 +203,20 @@ button {
     margin-left: 130px;
     margin-top: 70px;
 }
+.shopactive {
+    transform: translateX(calc(-540px));
+    transition: transform 300ms linear;
+}
+.shopactiveback {
+    transform: translateX(calc(0px));
+    transition: transform 300ms linear;
+}
 .item-list {
     max-width: 519px;
     background: #ffffff;
     display: flex;
     box-shadow: 1px 5px 5px 1px rgb(205, 205, 205, 0.5);
+    
 }
 .item-block {
     position: relative;
@@ -295,13 +304,10 @@ button {
     max-width: 1404px;
     width: 15%;
     height: 100%;
-    opacity: 0.6;
     /* background:linear-gradient(90deg, rgba(237,240,245,0.4)0%, rgba(237,240,245, 0.5)100%); */
 }
 .active {
     display:block;
-    transform: translateX(calc(-540px*0));
-    transition: transform 300ms linear;
 }
 .strelkaleft{
     position: absolute;
