@@ -1,18 +1,41 @@
-let butright = document.querySelector('.strelkaright');
-let butleft = document.querySelector('.strelkaleft');
-let backleft = document.querySelector('.backgroundleft');
-let cart = document.querySelector('.shop');
+      const list = document.getElementById("list");
+      const butLeft = document.getElementById("left");
+      const butRight = document.getElementById("right");
+
+      const EL_WIDTH = list.children[0].getBoundingClientRect().width;
+      const EL_ON_PAGE = 4;
+      const indexStart = 0;
+      const indexEnd = list.children.length - EL_ON_PAGE;
+      let indexCurrent = 0;
 
 
-console.log(butright);
+      function scroll() {
+        list.style.transform = `translateX(${EL_WIDTH * -indexCurrent}px)`;
+      }
 
-butright.onclick = () => {
-    backleft.classList.add('active');
-    cart.classList.add('shopactive');
-    cart.classList.remove('shopactiveback');
-}
-butleft.onclick = () => {
-    cart.classList.add('shopactiveback');
-    backleft.classList.remove('active');
+      butRight.onclick = () => {
+        indexCurrent = indexCurrent + 1;
+        scroll(indexCurrent);
+
+        if (indexCurrent > indexStart) {
+          butLeft.disabled = false;
+        }
+
+        if (indexCurrent >= indexEnd) {
+          butRight.disabled = true;
+        }
+      };
+
+      butLeft.addEventListener("click", function () {
     
-}
+        indexCurrent = indexCurrent - 1;
+
+        scroll(indexCurrent);
+
+        butLeft.disabled = indexCurrent <= indexStart;
+        butRight.disabled = !(indexCurrent < indexEnd);
+
+        console.log(indexEnd);
+        console.log(list.children.length);
+        console.log(EL_ON_PAGE);
+      });

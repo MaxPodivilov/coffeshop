@@ -197,20 +197,14 @@ button {
 }
 .shop {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1 fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin-left: 130px;
     margin-top: 70px;
-}
-.shopactive {
-    transform: translateX(calc(-540px));
     transition: transform 300ms linear;
 }
-.shopactiveback {
-    transform: translateX(calc(0px));
-    transition: transform 300ms linear;
-}
+
 .item-list {
     max-width: 519px;
     background: #ffffff;
@@ -297,7 +291,7 @@ button {
     /* background:linear-gradient(90deg, rgba(237,240,245,0.4)0%, rgba(237,240,245, 0.5)100%); */
 }
 .backgroundleft {
-    display: none;
+    display: block;
     position: absolute;
     left: 0px;
     top: 0px;
