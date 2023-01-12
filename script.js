@@ -5,7 +5,7 @@
       const EL_WIDTH = list.children[0].getBoundingClientRect().width;
       const EL_ON_PAGE = 4;
       const indexStart = 0;
-      const indexEnd = list.children.length - EL_ON_PAGE;
+      const indexEnd = list.children.length / 2 - 2;
       let indexCurrent = 0;
 
 
