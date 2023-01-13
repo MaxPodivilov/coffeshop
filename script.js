@@ -26,7 +26,7 @@
         }
       };
 
-      butLeft.addEventListener("click", function () {
+      butLeft.onclick = () => {
     
         indexCurrent = indexCurrent - 1;
 
@@ -35,7 +35,48 @@
         butLeft.disabled = indexCurrent <= indexStart;
         butRight.disabled = !(indexCurrent < indexEnd);
 
-        console.log(indexEnd);
-        console.log(list.children.length);
-        console.log(EL_ON_PAGE);
-      });
+      };
+
+                        // bottom
+
+      const listBot = document.getElementById("listBot");
+      const butBotLeft = document.getElementById("butBotLeft");
+      const butBotRight = document.getElementById("butBotRight");
+      const backgroundBotRight = document.getElementById("backbotright");
+
+      const EL_WIDTH_BOT = listBot.children[0].getBoundingClientRect().width;
+      const EL_ON_PAGE_BOT = 3;
+      const indexStart_Bot = 0;
+      const indexEnd_Bot = listBot.children.length - EL_ON_PAGE_BOT;
+      let indexCurrent_Bot = 0;
+
+
+      function scroll() {
+        listBot.style.transform = `translateX(${(EL_WIDTH_BOT+40) * -indexCurrent_Bot}px)`;
+      }
+
+      butBotRight.onclick = () => {
+        indexCurrent_Bot = indexCurrent_Bot + 1;
+        scroll(indexCurrent_Bot);
+
+        if (indexCurrent_Bot > indexStart_Bot) {
+          butBotLeft.disabled = false;
+        }
+
+        if (indexCurrent_Bot >= indexEnd_Bot) {
+          butBotRight.disabled = true;
+          backgroundBotRight.disabled = true;
+        }
+      };
+
+      butBotLeft.onclick = () => {
+    
+        indexCurrent_Bot = indexCurrent_Bot - 1;
+
+        scroll(indexCurrent_Bot);
+
+        butBotLeft.disabled = indexCurrent_Bot <= indexStart_Bot;
+        butBotRight.disabled = !(indexCurrent_Bot < indexEnd_Bot);
+        backgroundBotRight.disabled = !(indexCurrent_Bot < indexEnd_Bot);
+
+      };
