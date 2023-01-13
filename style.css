@@ -506,6 +506,9 @@ button {
     height: 60%;
     background:linear-gradient(90deg, rgba(237,240,245,0.5)0%, rgba(237,240,245,0.5)100%);
 }
+.backgroundbot:disabled {
+    display: none;
+}
 .backgroundbotleft {
     position: absolute;
     left: 0px;
@@ -515,9 +518,7 @@ button {
     height: 60%;
     /* background:linear-gradient(90deg, rgba(237,240,245,0.5)0%, rgba(237,240,245,0.5)100%); */
 }
-.backgroundbot:disabled {
-    display: none;
-}
+
 .strelkabotleft {
     position: absolute;
     left: 30px;

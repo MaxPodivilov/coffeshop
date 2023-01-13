@@ -51,13 +51,13 @@
       let indexCurrent_Bot = 0;
 
 
-      function scroll() {
-        listBot.style.transform = `translateX(${(EL_WIDTH_BOT+40) * -indexCurrent_Bot}px)`;
+      function scrollBot() {
+        listBot.style.transform = `translateX(${(EL_WIDTH_BOT+30) * -indexCurrent_Bot}px)`;
       }
 
       butBotRight.onclick = () => {
         indexCurrent_Bot = indexCurrent_Bot + 1;
-        scroll(indexCurrent_Bot);
+        scrollBot(indexCurrent_Bot);
 
         if (indexCurrent_Bot > indexStart_Bot) {
           butBotLeft.disabled = false;
@@ -73,7 +73,7 @@
     
         indexCurrent_Bot = indexCurrent_Bot - 1;
 
-        scroll(indexCurrent_Bot);
+        scrollBot(indexCurrent_Bot);
 
         butBotLeft.disabled = indexCurrent_Bot <= indexStart_Bot;
         butBotRight.disabled = !(indexCurrent_Bot < indexEnd_Bot);
