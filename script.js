@@ -85,7 +85,6 @@
       let listtabs = document.querySelector("#tabs");
       let links = document.querySelectorAll("button[role='tab']");
       let tabs = document.querySelectorAll("div[role='tabpanel']");
-      let buttab = document.querySelectorAll(".numberset");
 
       listtabs.onclick = (event) => {
         const makeHidden = (tab) => {
@@ -96,6 +95,7 @@
 
         links.forEach((link) => {
           link.setAttribute("aria-selected", false);
+          link.classList.remove("btnactive");
           
         });
 
