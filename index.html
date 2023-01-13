@@ -229,10 +229,10 @@
     <div class="pagegift">
         <p class="opsale">Best Gift For Best Friend</p>
         <h3 class="zag">GIFTSET</h3>
-        <div class="blockset">
-            <div class="shadowset">
-                <img src="assets/set1.png" class="photoset" alt="">
-                <div class="set">
+        <div class="blockset" id="tabs">
+            <div class="shadowset" id="tabs">
+                <div class="set" role="tabpanel" id="section1" aria-labelledby="tab1">
+                    <img src="assets/set1.png" class="photoset" alt="">
                     <s class="sale">285.000</s>
                     <h4 class="item-name">Giftset "Cà phê phin Việt Nam"</h4>
                     <p class="item-op">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn 
@@ -256,11 +256,13 @@
                         <a href="" class="moregift">CHI TIẾT</a>
                     </div>
                 </div>
-                <div class="blocknumber">
-                    <button class="numberset btnactive">1</button>
-                    <button class="numberset">2</button>
-                    <button class="numberset">3</button>
-                </div>
+                <div class="set" role="tabpanel" id="section2" aria-labelledby="tab2" hidden>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, distinctio earum sapiente dicta aut expedita fugiat recusandae magni dolore minus iure velit deserunt ullam unde voluptatum, nam possimus, amet hic!</div>
+                <div class="set" role="tabpanel" id="section3" aria-labelledby="tab3" hidden>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quos modi delectus similique recusandae? Odio dolore delectus eos aspernatur dignissimos hic dolor. Quas velit atque ex corrupti explicabo aspernatur quasi?</div>
+            <div class="blocknumber">
+                    <button class="numberset btnactive" role="tab" href="#section1" id="tab1" data-value="0" aria-selected="true" >1</button>
+                    <button class="numberset" role="tab" href="#section2" id="tab2" data-value="1">2</button>
+                    <button class="numberset" role="tab" href="#section3" id="tab3" data-value="2">3</button>
+            </div>
             </div>
         </div>
     </div>
@@ -389,7 +391,7 @@
                 </div>
             </div>
         </div>
-        <div class="backgroundbot" id="backbotright">
+        <div class="backgroundbot" id="backbotright" data-disabled="true">
             <button class="strelkabotright" id="butBotRight" ><img src="assets/strelka.png" alt=""></button>
         </div>
         <div class="backgroundbotleft">

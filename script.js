@@ -65,7 +65,7 @@
 
         if (indexCurrent_Bot >= indexEnd_Bot) {
           butBotRight.disabled = true;
-          backgroundBotRight.disabled = true;
+          backgroundBotRight.dataset.disabled = true;
         }
       };
 
@@ -77,6 +77,28 @@
 
         butBotLeft.disabled = indexCurrent_Bot <= indexStart_Bot;
         butBotRight.disabled = !(indexCurrent_Bot < indexEnd_Bot);
-        backgroundBotRight.disabled = !(indexCurrent_Bot < indexEnd_Bot);
+        backgroundBotRight.dataset.disabled = !(indexCurrent_Bot < indexEnd_Bot);
 
+      };
+                            // tabs
+
+      let listtabs = document.querySelector("#tabs");
+      let links = document.querySelectorAll("button[role='tab']");
+      let tabs = document.querySelectorAll("div[role='tabpanel']");
+      let buttab = document.querySelectorAll("numberset");
+
+      listtabs.onclick = (event) => {
+        const makeHidden = (tab) => {
+          tab.hidden = true;
+        };
+
+        tabs.forEach(makeHidden);
+
+        links.forEach((link) => {
+          link.setAttribute("aria-selected", false);
+        });
+
+        const clickIndex = event.target.dataset.value;
+        event.target.setAttribute("aria-selected", true);
+        tabs[clickIndex].hidden = false;
       };

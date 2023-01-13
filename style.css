@@ -345,29 +345,26 @@ button {
     margin-top: 100px;
 }
 .shadowset {
-    position: relative;
-    left: 100px;
     display: flex;
-    background: #FFFFFF;
-    padding-left: 500px;
+    
 } 
 .set {
     position: relative;
-    left: -12px;
-    width: 550px;
+    right: -300px;
+    width: 900px;
     height: 460px;
     padding: 64px;
+    padding-left: 320px;
     background: #FFFFFF;
-    z-index: 0;
+    z-index: 1;
     box-shadow: 1px 0px 15px 1px rgba(205, 205, 205, 0.4);
 }
 .photoset {
     position: absolute;
     z-index: 10;
-    left: 0px;
+    left: -230px;
     top: 0px;
     z-index: 10;
-    background:linear-gradient(90deg, #EDF0F5 0%, #EDF0F5 50%, #ffffff 50%);
 }
 .coffe {
     display: flex;
@@ -411,9 +408,11 @@ button {
 }
 .blocknumber {
     position: relative;
+    right: -295px;
     width: 90px;
     display: flex;
     flex-direction: column;
+    
 }
 .numberset{
     font-family: 'Montserrat';
@@ -427,15 +426,15 @@ button {
     background: #EDF0F5;
     opacity: 0.5;
     position: relative;
-    left: -10px;
+    left: 0px;
     top:0px;
 }
 .btnactive {
     box-shadow: 3px 0px 3px 1px rgba(205, 205, 205, 0.4);
-    z-index: 50;
+    z-index: 2;
     background: white;
     position: relative;
-    left: -12px;
+    left: 0px;
     top:0px;
     opacity: 1;
 }
@@ -508,6 +507,9 @@ button {
 }
 .backgroundbot:disabled {
     display: none;
+}
+*[data-disabled="true"] {
+    background: none;
 }
 .backgroundbotleft {
     position: absolute;
